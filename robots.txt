@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+sitemap: https://o-said.github.io/projet-4-la_chouette_agence/sitemap.xml
