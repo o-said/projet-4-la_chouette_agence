@@ -5,6 +5,7 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
 }
 
 a,
@@ -523,6 +524,7 @@ button {
 
 .scrollToTop span {
     margin-top: 6px;
+    color:#fff;
 }
 
 .showScrollTop {
@@ -532,7 +534,8 @@ button {
 
 a[data-lightbox] {
     position: relative;
-    display: block;
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
@@ -654,6 +657,7 @@ a {
     color: #575757!important;
 }
 
+
 .container {
     max-width: 1000px;
 }
@@ -681,7 +685,7 @@ p {
 }
 
 .tight-width-whitespace {
-    max-width: 600px;
+    max-width: 900px;
     margin: auto auto auto auto;
 }
 
@@ -702,6 +706,21 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+}
+h1, h2, h3, .h1, .h2, .h3{
+    font-family: "helvetica";
+    font-weight: 400;    
+}
+.citation{
+    color:#5c5c5c;
+    font-size: 2em;
+    font-family: sans-serif;
+}
+.citation-author{
+    margin-left: 20px;
+}
+figure figcaption{
+    color:#000000;
 }
 
 h2 {
@@ -729,7 +748,12 @@ h1 {
 h4 {
     color: #333333!important;
 }
-
+p{
+    font-size: 1.7rem;
+}
+address{
+    margin-bottom: 15px;
+}
 .icons {
     margin-bottom: 14px;
     margin-top: 24px;
@@ -737,6 +761,9 @@ h4 {
 
 .white {
     color: #FFFFFF!important;
+}
+.grey{
+    color: #282626 !important;;
 }
 
 .portfolio-thumb {
@@ -753,7 +780,11 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px 40px 40px 40px;
+}
+.black-background-header{
+    background-color: rgba(0,0,0,0.4);
     padding: 40px 40px 40px 40px;
 }
 
@@ -775,7 +806,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #f3976c!important;
 }
 
 .btn-atomic-tangerine {
@@ -818,11 +849,37 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la-chouette-agence-banniere.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.webp");
+}
+.contact{
+    text-align: center;    
+    width:100%;
+    
+}
+form  div{
+    display: flex;
+    flex-direction: column;
+}
+.form-grid {    
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+        "input1 input2"
+        "input3 input4"
+        "textarea textarea";
+    width: 85%;
+    gap: 20px;
+    margin: 15px auto;
+    padding: 20px 30px 20px 10px;    
+    z-index: 999;
+    background-color: #ee733a9c;
+}
+.textarea{
+    grid-area: textarea;
 }
 
 @media (max-width: 1024px) {
