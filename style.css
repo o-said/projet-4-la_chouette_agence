@@ -74,7 +74,7 @@ a:hover {
 }
 
 .bg-repeat {
-    background: repeat;
+    background: no-repeat;
 }
 
 .bg-t-edge {
