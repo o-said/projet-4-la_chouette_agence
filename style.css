@@ -9,9 +9,14 @@ body {
 }
 
 a,
-button {
+button,
+.bloc a{
     transition: all .3s ease-in-out;
     outline: none!important;
+    box-sizing: border-box;
+    min-width: 44pt;
+    min-height: 44pt;
+    padding-top: 15px;
 }
 
 a:hover {
@@ -153,6 +158,8 @@ a:hover {
 .d-bloc p a:hover {
     color: rgba(255, 255, 255, 1);
 }
+
+
 
 .d-bloc .navbar-toggle .icon-bar {
     background: rgba(255, 255, 255, 1);
@@ -507,8 +514,8 @@ button {
 }
 footer a {
     display: inline-block;
-    height: 40px!important;
-    width: 40px!important;
+    height: 44pt!important;
+    width: 44pt!important;
     padding-top: 5px;
 }
 
@@ -661,6 +668,22 @@ a {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
+}
+
+h1:focus,
+h2:focus,
+h3:focus,
+h4:focus,
+h5:focus,
+h6:focus,
+p:focus,
+label:focus,
+.btn:focus,
+a:focus,
+.navbar-nav>li>a:focus 
+{
+    outline: 2px solid #8cc63f;
+    background-color: #da6f0c;
 }
 
 
