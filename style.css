@@ -329,6 +329,11 @@ a:hover {
     float: right;
     z-index: 1;
 }
+#nav-toggle{
+    box-sizing: border-box;
+    min-width: 44pt;
+    min-height: 44pt;
+}
 
 .nav > li {
     float: left;
